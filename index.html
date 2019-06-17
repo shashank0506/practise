@@ -2,16 +2,36 @@
        
         
 <link href="./images/header.jpg" rel="icon" type="image/x-icon">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+
+
 
     <head>
         <title>
-            Hello
+            Resume
         </title>
     </head>
     <style type="text/css">
+    
     body{
-        font-family: cursive;padding-left: 100px;padding-right: 100px;
-        background-color: black;color: white;
+        font-family: cursive;
+        background-color:white;color: black;
+       
+        
+    }
+    #shashi{
+        padding-left: 100px;padding-right: 100px;
+        background-image: url("https://images.unsplash.com/photo-1418985991508-e47386d96a71?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80");
+       height: 900px;  
+      
+    }
+    #background{
+        background-image: url("./images/profile.jpg");
     }
     
     #form{
@@ -19,10 +39,10 @@
         position:fixed; left: 35%;margin-top: 25px;
     }
     #heading{
-        color: white;background-color: chartreuse;height: 70px;
+        color: white;background-color: chartreuse;height: 70px;border: 1px solid;
     }
     #profile{
-        background-color: #FFFAF0;
+        
     }
     .image{
         position: absolute; left:40% 
@@ -35,7 +55,7 @@
         border: 1px solid;width: 500px;height: 50px;
     }
     #profile_pic:hover{
-        width: 300px;height: 300px;border-radius: 0%;padding: 10px;margin-top: 10px;
+        width: 200px;height: 200px;border-radius: 0%;padding: 10px;margin-top: 10px;
         margin-bottom:5px; 
 
     }
@@ -45,72 +65,334 @@
     }
     #input{
         border: 1px solid;width: 300px;margin-left: 40%; 
-    }
-    
-    </style>
-    <body>
         
-        <div id="heading">
-        <h1 align="center" style="padding: 5px;">Resume</h1>
-        </div><hr>
-        <div id="profile">
-            <img src="./images/shashi1.JPG" alt="image" title="profile" id="profile_pic"> 
-            <h2 align="center" style="color: black"> Shashank</h2>
-            <h3 align="center" style="color: black;padding: 10px;">Engineering student in sit</h3>
-               
-                  
-                
-           
-           
-                
+    }
+    #information{
+        
+    }
+    #about{
+        background-color: aqua;width: 220px;height: 50px;border: 1px solid;
+        position: absolute;top: 300px;left: 200px;cursor: pointer;
+    }
+    #education{
+        position: absolute;top: 500px;left: 100px;width: 250px;background-color: aliceblue;color: black;
+    }
+    #game_det{
+        position: absolute;top: 600px;left: 100px;width: 250px;background-color: white;color: black;
+    }
+    h2.school{
+        border: 1px solid;
+        
+    }
+    #primary:hover{
+        background-color: burlywood;cursor: pointer;
+    }
+    #high:hover{
+        background-color: burlywood;cursor: pointer;
+        
+    }
+    #college:hover{
+        background-color: burlywood;cursor: pointer;
+    }
+    #primary_det{
+        display: none;margin-left: 300px;
+    }
+    #high_det{
+        display: none;margin-left: 300px;
+    }
+    #college_det{
+        display: none;margin-left: 300px;
+    }
+    #home:hover{
+       background-color: bisque;
+    }
+    #game{
+        cursor: pointer;
+    }
+    #dice:hover{
+        background-color: burlywood;cursor: pointer;
+    }
+    #monster:hover{
+        background-color: burlywood;cursor: pointer;
+    }
+    </style>
+    
+        <body><div id="shashi">
+            
+                <div id="heading">
+                        <h1 align="center" style="padding: 5px;">Resume</h1>
+                        </div><hr>
+                        <div id="background">
+                        <div id="profile">
+                            <img src="./images/shashi1.JPG" alt="image" title="profile" id="profile_pic"> 
+                            <h2 align="center" style="color: black"> Shashank</h2>
+                            <h3 align="center" style="color: black;padding: 10px;">Engineering student in sit</h3>
+                             <div id="about">
+                 <h2 align="center" style="display: inline;">                     Education
+                                 </h2><span>(click)</span>
+                                 
+                             </div>  
+                                  
+                            </div> 
+                           </div>
+                           <nav class="navbar navbar-expand-sm bg-light">
+                                <div class="navbar-header">
+                                    <a href="index.html" class="navbar-active">Home</a>
+                                </div>
+                                <!-- Links -->
+                                <ul class="navbar-nav" style="float: left;">
+                                  <li class="nav-item" id="game" style="margin-left:900px;background-color:lavender;height: 40px;width: 80px;">
+                                    <p align="center"><p align="center"><a href="./signup.html">more</a></p></p>
+                                  </li>
+                                  
+                                </ul>
+                              
+                              </nav>
+                              
+                                
+                                
+                            <div class="row">
+                                <div id="information">
+                                <div >
+                                    <h2>Personal Detailes:</h2>
+                                <table id="table" class="table table-bordered table-hover table-dark table-striped">
+                           <tr>
+                               <td class="id">
+                                   Name:
+                               </td>
+                               <td class="id">Shashank </td>
+                           </tr>
+                           <tr>
+                               <td class="id">Date of birth</td>
+                               <td class="id">05/06/1999</td>
+                           </tr>
+                           <tr>
+                                <td class="id">Email</td>
+                                <td class="id"><a href="mailto:shashankgbshashi@gmail.com">
+                                    shashankgbshashi@gmail</a><i class="fa fa-envelope" aria-hidden="true" style="margin: 20px;"></i></td>
+                            </tr>
+                            <tr>
+                                <td class="id">Phone</td>
+                                <td class="id">8296692254<i class="fa fa-phone" aria-hidden="true" style="margin: 20px;"></i></td>
+                            </tr>
+                            <tr>
+                                <td class="id">Address</td>
+                                <td class="id">sit 8th cross, 1st link,tumkur
+                                    <i class="fa fa-map-marker" aria-hidden="true" style="margin:20px;"></i>
+                                </td>
+                            </tr>
+                            
+                        </table>
+                        </div>
+                    </div>
+                    <div id="primary_det">
+                            <div >
+                                <h2>Primary school</h2>
+                            <table id="table"  class="table table-bordered table-hover table-dark table-striped">
+                       <tr>
+                           <td class="id">
+                               Institute
+                           </td>
+                           <td class="id">Subhas school</td>
+                       </tr>
+                       <tr>
+                           <td class="id">Percentage</td>
+                           <td class="id">85%</td>
+                       </tr>
+                       <tr>
+                            <td class="id">Email</td>
+                            <td class="id">shashankgbshashi@gmail.com</td>
+                        </tr>
+                        
+                    </table>
+                    </div>
                 </div>
-                <hr>
+                <div id="high_det">
+                    <div >
+                        <h2>High school</h2>
+                    <table id="table"  class="table table-bordered table-hover table-dark table-striped">
+               <tr>
+                   <td class="id">
+                       Institute
+                   </td>
+                   <td class="id">SArvodaya school</td>
+               </tr>
+               <tr>
+                   <td class="id">Percentage</td>
+                   <td class="id">90%</td>
+               </tr>
+               <tr>
+                    <td class="id">Address</td>
+                    <td class="id">vijayanagar,tumkur</td>
+                </tr>
+                
+            </table>
+            </div>
+            </div>
+            <div id="college_det">
                 <div >
-                <table id="table">
+                    <h2>College</h2>
+                <table id="table"  class="table table-bordered table-hover table-dark table-striped">
            <tr>
                <td class="id">
-                   semester
+                   Institute
                </td>
-               <td class="id">5th </td>
+               <td class="id">Siddaganga institute of technology</td>
            </tr>
            <tr>
-               <td class="id">Branch</td>
-               <td class="id">CSE</td>
+               <td class="id">CGPA</td>
+               <td class="id">9.00</td>
            </tr>
            <tr>
-                <td class="id">Email</td>
-                <td class="id">shashankgbshashi@gmail</td>
+                <td class="id">Visit</td>
+                <td class="id"><a href="http://www.sit.ac.in/">Visit</a></td>
             </tr>
             
         </table>
         </div>
-        <hr>
-        <h1>Technical skills</h1>
-        <ul>
-            <li>
-                c and c++
-            </li>
-            <li>
-                Data structure
-            </li>
-            <li>
-                php
-            </li>
-        </ul>
-        <p align="center"><a href="more.html">more</a></p>
-        <hr>
-          <div id="input">
-           <form>
-               <div class="form-group"><label>Name:</label>
-                   <input type="text" name="name" placeholder="Name" required>
-               </div><br>
-               <div class="form-group"><label>email:</label>
-                <input type="email" name="email" placeholder="email" required>
-            </div><br>
-            <input type="submit" value="submit" name="submit" class="form-control" style="margin-left: 50px;">
-           </form>
-       </div>
+        </div>
         
-    </body>
+        <div id="education" style="border:1px solid black">
+                <div id="primary">
+                   <h4 style="margin-left: 20px;">primary School</h4>
+                </div>
+                <div id="high">
+                        <h4 style="margin-left: 20px;">High School</h4> 
+                    </div>
+                    <div id="college">
+                            <h4 style="margin-left: 20px;">College</h4>
+                        </div>
+    
+            </div>
+        </div>
+            
+                        <hr>
+                        <div class="row"><div class="col-sm-4"></div>
+                        <div class="col-sm-4">
+                        <h1>Technical skills</h1>
+                        <ul>
+                            <li>
+                                c and c++
+                            </li>
+                            <li>
+                                Data structure
+                            </li>
+                            <li>
+                                php
+                            </li>
+                            <li>
+                                    css
+                                </li>
+                                <li>
+                                        html
+                                    </li>
+                           
+                        </ul>
+                        </div>
+                        <div class="col-sm-4"></div>
+                        </div>
+                        
+                        <hr>
+                        <div class="row">
+                                <div class="col-sm-4"></div>
+                                <div class="col-sm-4">
+                                    <h1 style="color: blue">Objective</h1>
+                                    <h6>
+                                            I am a creative and highly motivated student.I can lend my knowledge to help your organization improve profitability and grow my industry experience.
+                                                                                        
+                                    </h6>
+                                </div>
+                                <div class="col-sm-4"></div>
+                            </div>
+                         <!-- <div id="input">
+                           <form>
+                               <div class="form-group"><label>Name:</label>
+                                   <input type="text" name="name" placeholder="Name" required>
+                               </div><br>
+                               <div class="form-group"><label>email:</label>
+                                <input type="email" name="email" placeholder="email" required>
+                            </div><br>
+                            <input type="submit" value="submit" name="submit" >
+                           </form>
+                       </div>-->
+                        
+                        
+
+                        <div id="game_det">
+                                <div id="dice" style="border: 1px solid;">
+                                   <h4 style="margin-left: 20px;"><a href="sample.html">Dice</a></h4>
+                                </div>
+                                <div id="monster" style="border: 1px solid;">
+                                        <h4 style="margin-left: 20px;"><a href="game.html">Monster Game</a></h4> 
+                                    </div>
+                                    
+                    
+                            </div>
+                        </div>
+
+                        <script type="text/javascript">
+                        $('#education').hide();
+                        $('#game_det').hide();
+                        $('#about').click(function(){
+                            if($('#education').is(':visible')){
+                                $('#education').hide();
+                                $('#information').show();
+                                $('#primary_det').hide();
+                                $('#high_det').hide();
+                               $('#college_det').hide();
+                               $('#game_det').hide();
+                                $('#information').css('margin-left','0px');
+                                $(this).html('<h2 style="display:inline;">Education</h2><span>(click)</span>')
+                            }else{
+                                if($('#game_det').is(':visible')){
+                                    $('#game_det').hide();
+                                    $('#information').show();
+                                    $('#high_det').hide();
+                                    $('#primary_det').hide();
+                                    $('#college_det').hide();
+                                    $('#education').hide();
+                                    $('#information').css('margin-left','0px');
+                                }else{
+                                    $('#education').show();   
+                                    $('#information').css('margin-left','300px');
+                                }
+                               
+                                
+                            
+                            console.log($(this).text());
+                            $(this).html('<h2 style="display:inline;">Personal</h2><span>(click)</span>')
+                            }
+                            
+                            
+                        });
+
+                        $('#primary').click(function(){
+                            $('#high_det').hide();
+                            $('#information').hide();
+                            $('#primary_det').show();
+                            $('#college_det').hide();
+                        });
+                        $('#high').click(function(){
+                            $('#information').hide();
+                            $('#primary_det').hide();
+                            $('#high_det').show();
+                            $('#college_det').hide();
+                        });
+
+                        $('#college').click(function(){
+                            $('#information').hide();
+                            $('#primary_det').hide();
+                            $('#high_det').hide();
+                            $('#college_det').show();
+
+                        });
+                       
+                        </script>
+        </body>
+      
+        
+    
+        
     
     </html>
+    
